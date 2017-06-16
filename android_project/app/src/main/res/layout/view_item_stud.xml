@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/txt_stud_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu" />
+
+    <TextView
+        android:id="@+id/txt_stud_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu" />
+
+    <TextView
+        android:id="@+id/txt_stud_class"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu" />
+
+    <TextView
+        android:id="@+id/txt_stud_term"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu" />
+
+    <TextView
+        android:id="@+id/txt_stud_course"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu" />
+
+    <TextView
+        android:id="@+id/txt_stud_remark"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu" />
+
+    <TextView
+        android:id="@+id/txt_stud_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="liu"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+
+    <color name="colorMain">#3F51B5</color>
+    <color name="colorMainAlpha">#7F3F51B5</color>
+    <color name="colorGray">#EEEEEE</color>
+    <color name="colorLighGray">#EEEFFF</color>
+    <color name="colorHotGray">#BBBBBB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <!--字体用色  1级-->
+    <color name="colorTextOne">#404040</color>
+    <color name="colorTextTwo">#999999</color>
+    <color name="colorTextThree">#CCCCCC</color>
+
+    <color name="colorListBg1">#0080A3</color>
+    <color name="colorListBg2">#6AAFF4</color>
+    <color name="colorListBg3">#36BF86</color>
+</resources>

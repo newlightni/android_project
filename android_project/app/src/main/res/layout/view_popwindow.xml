@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pop_top_bg"
+        android:gravity="center"
+        android:text="教学日志"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="授课总结"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="便签记录"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGray" />
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pop_buttom_bg"
+        android:gravity="center"
+        android:text="平时成绩"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_16" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorTransparent"
+        android:src="@drawable/arrow_down" />
+</LinearLayout>

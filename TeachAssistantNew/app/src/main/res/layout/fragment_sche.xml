@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_sche"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_radiogroup_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_sche_top_1"
+                style="@style/style_radio_top_nav_left"
+                android:checked="true"
+                android:text="近期活动" />
+
+            <RadioButton
+                android:id="@+id/radio_sche_top_2"
+                style="@style/style_radio_top_nav_right"
+                android:text="全部日程" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/image_sche_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_sche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_list_bg1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="昨日活动"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/txt_null_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无活动"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20" />
+
+        <ListView
+            android:id="@+id/list_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_list_bg2"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="今日安排"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/txt_null_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无活动"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20" />
+
+        <ListView
+            android:id="@+id/list_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_list_bg3"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="明日预告"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/txt_null_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无活动"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_20" />
+
+        <ListView
+            android:id="@+id/list_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="0.5dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bs.teachassistant">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".common.AppConfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LogoShowActivity"
+            android:theme="@style/logoAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddScheActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.DateTimeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/dialog_activity_no_title"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.ScheInfoActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.ShareActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.DialogInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/dialog_activity_no_title"/>
+        <activity
+            android:name=".activity.AddStudActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.AddLessActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.AddRecordActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.CheckClassActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.NoteInfoActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.AddScoreActivity"
+            android:launchMode="singleTask"/>
+
+        <service android:name=".service.RemindService"/>
+
+        <receiver
+            android:name=".service.AlarmServer"
+            android:process=":remote"/>
+
+        <activity android:name=".activity.CourseActivity">
+        </activity>
+        <activity android:name=".activity.CourseAddActivity">
+        </activity>
+        <activity
+            android:name=".activity.YearActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/dialog_activity_no_title"/>
+        <activity android:name=".activity.LessonsActivity">
+        </activity>
+        <activity android:name=".activity.CourseListActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_less_close"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="取消"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/txt_nav_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="添加备课"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_18" />
+
+        <TextView
+            android:id="@+id/txt_less_yes"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_less_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorTransparent"
+        android:hint="课程名称"
+        android:padding="10dp"
+        android:textColor="@color/colorTextOne" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorHotGray" />
+
+    <EditText
+        android:id="@+id/edit_less_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorTransparent"
+        android:hint="章节名称"
+        android:padding="10dp"
+        android:textColor="@color/colorTextOne" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="上课时间"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/txt_less_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="2017/04/08 周六 18:00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorHotGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="第几节"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/txt_less_pert"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:gravity="center_vertical|end"
+            android:inputType="number"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorHotGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="学期"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/txt_term"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:padding="10dp"
+            android:text="大一 第1学期"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorHotGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="上课地点"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/txt_local"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:gravity="center_vertical|end"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorGray" />
+
+    <EditText
+        android:id="@+id/edit_less_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorTransparent"
+        android:gravity="start"
+        android:hint="备课内容"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/line_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_edit"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/edit"
+            android:gravity="center"
+            android:text="编辑"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/txt_delete"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/delete"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+</LinearLayout>

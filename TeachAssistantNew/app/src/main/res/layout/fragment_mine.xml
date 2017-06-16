@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorLighGray"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLighGray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorMain"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_user_header"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/default_boy"/>
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_18"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_course"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/course"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/course"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:text="我的课程"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/txt_collec"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/share"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/share"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:visibility="gone"
+                android:text="我要分享"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/txt_record"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/record"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/record"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:text="日志笔记"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/txt_tucao"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/tucao"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/tucao"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:visibility="gone"
+                android:text="我要吐槽"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/txt_about"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/about"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/about"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:visibility="gone"
+                android:text="关于APP"
+                android:textSize="@dimen/font_16"/>
+
+            <TextView
+                android:id="@+id/txt_clear"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/clear"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/clear"
+                android:gravity="center_vertical"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:text="清除数据"
+                android:textSize="@dimen/font_16"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite">
+
+                <com.bs.teachassistant.view.SwitchButton
+                    android:id="@+id/text_notice_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txt_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_toLeftOf="@id/text_notice_switch"
+                    android:background="@color/colorWhite"
+                    android:drawableLeft="@drawable/notice"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/notice"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingStart="16dp"
+                    android:text="是否提醒"
+                    android:textSize="@dimen/font_16"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_exit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorWhite"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/font_16"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

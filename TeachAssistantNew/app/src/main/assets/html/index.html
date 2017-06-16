@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>签到</title>
+    <script>
+			window.onload = function() {
+				var btn = document.getElementsByClassName('btn')[0];
+				var tex = document.getElementsByClassName('textt')[0];
+			}
+
+
+    </script>
+    <style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.contanier {
+				text-align: center;
+				padding-top: 5rem;
+				padding-bottom: 5rem;
+			}
+
+			.textt {
+				border: none;
+				border: 1px solid #30303d;
+				padding-left: 0.5rem;
+				border-radius: 5px;
+				height: 2rem;
+				width: 15rem;
+				line-height: 1.6rem;
+				margin-top: 4rem;
+			}
+
+			.btn {
+				margin-top: 4rem;
+				border: none;
+				border-radius: 5px;
+				height: 2rem;
+				color: white;
+				width: 10rem;
+				background-color: #3F51B5;
+				line-height: 1.6rem;
+			}
+			.btn1 {
+				margin-top: 2rem;
+				border: none;
+				border-radius: 5px;
+				height: 2rem;
+				color: white;
+				width: 10rem;
+				background-color: #3F51B5;
+				line-height: 1.6rem;
+			}
+
+
+    </style>
+</head>
+
+<body>
+<section class="contanier">
+    <h1 id="class_name">上课签到</h1>
+    <form action="/sign.do" method="GET">
+
+        <input class="textt" type="text" placeholder="输入学号" name="classId"/>
+        <br/>
+        <input class="textt" type="text" placeholder="输入学期(例如：大一 第1学期)" name="term"/>
+        <br/>
+        <input class="textt" type="text" placeholder="输入课程" name="course"/>
+        <br/>
+        <input class="textt" type="text" placeholder="数据班级" name="groupName"/>
+        <br/>
+        <input class="btn" type="submit" value="签到" name="status"/>
+        <br/>
+        <input class="btn1" type="submit" value="请假" name="status"/>
+    </form>
+</section>
+</body>
+
+</html>

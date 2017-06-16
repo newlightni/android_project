@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.bs.teachassistant.view.CustomViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTransparent"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            style="@style/nav_radio_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_bottom_btn_1"
+            android:text="日程" />
+
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            style="@style/nav_radio_bottom"
+            android:drawableTop="@drawable/radio_bottom_btn_2"
+            android:text="签到" />
+
+
+        <TextView
+            android:id="@+id/txt_add_note"
+            style="@style/nav_radio_bottom"
+            android:background="@drawable/shape_outline_center"
+            android:drawableTop="@drawable/nav_center"
+            android:text="记录"
+            android:textColor="#999999" />
+
+
+        <RadioButton
+            android:id="@+id/radio_4"
+            style="@style/nav_radio_bottom"
+            android:drawableTop="@drawable/radio_bottom_btn_4"
+            android:text="备课" />
+
+
+        <RadioButton
+            android:id="@+id/radio_5"
+            style="@style/nav_radio_bottom"
+            android:drawableTop="@drawable/radio_bottom_btn_5"
+            android:text="我的" />
+
+    </RadioGroup>
+</RelativeLayout>
