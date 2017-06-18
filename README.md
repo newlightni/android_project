@@ -4,4 +4,4 @@ An android project based on xutils framework.This is a teacher assistant app.To 
 student check-in management.
 
 This app uses fragment to build the view frame.
-
+Screenshot of the project is as follows：
